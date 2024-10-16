@@ -35,10 +35,10 @@ public class Student {
     }
 
     //metoda za ispis Studenata sa varargs
-    public static String varargs(String... operands) {
+    public static void varargs(Student... operands) {
         for (int i = 0; i < operands.length; i++) {
-            System.out.println(operands[i]);
+            String podaciStudenta = operands[i].ispisObjekta();
+            System.out.println(podaciStudenta);
         }
-        return "";
     }
 }

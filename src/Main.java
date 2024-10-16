@@ -12,12 +12,8 @@ public class Main {
 
         Student student2 = new Student("John", "Smith", 21212);
 
-        String ispis0 = student.ispisObjekta();
-        String ispis1 = student1.ispisObjekta();
-        String ispis2 = student2.ispisObjekta();
+        Student nizStudenata[] = {student, student1, student2};
 
-        String ispis[] = {ispis0, ispis1, ispis2};
-
-        Student.varargs(ispis);
+        Student.varargs(nizStudenata);
     }
 }
